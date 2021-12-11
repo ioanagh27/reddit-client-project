@@ -1,13 +1,22 @@
-import './App.css';
+import './App.css'; 
+import React from 'react';
+import Header from './containers/Header';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import RedditList from './containers/RedditList';
+import RedditDetail from './containers/RedditDetail';
 
 function App() {
   return (
     <main>
       <section className="App">
-        <h1>Reddit Minimal</h1>
-      </section>
-      <section>
-        <h2>Popular</h2>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path='/' element={<RedditList/>} />
+            <Route path='/r/' element={<RedditDetail/>} />
+            <Route>404 Not found!</Route>
+          </Routes>
+        </Router>
       </section>
     </main>
   );

@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 import { redditReducer } from "./redditReducer";
 
-export const reducers = combineReducers({
+const reducers = combineReducers({
     allReddits: redditReducer
 })
+
+export default reducers;
