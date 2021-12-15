@@ -6,10 +6,10 @@ import { faRedditAlien} from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
     return (
-        <div className="fixed header">
-            <div className="container centre">
-                <FontAwesomeIcon icon={faRedditAlien} />
-                <h1>Reddit<span>Minimal</span></h1>
+        <div className="">
+            <div className="App-logo">
+                
+                <h1>{<FontAwesomeIcon icon={faRedditAlien} />}Reddit<span>Minimal</span></h1>
             </div>
         </div>
     )
