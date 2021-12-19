@@ -1,9 +1,7 @@
 import React, {useEffect} from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { RedditComponent } from './RedditComponent';
+import { RedditComponent } from './redditComponent/RedditComponent';
 import {  setReddits } from "../redux/actions/redditActions";
-
-
 
 const RedditList = () => {
     const reddits = useSelector((state) => state);
